@@ -171,7 +171,7 @@ class MetalBezierView: MTKView {
             super.device = device
             commandQueue = (self.device?.makeCommandQueue())!
 
-            library = device?.newDefaultLibrary()
+            library = device?.makeDefaultLibrary()
             pipelineDescriptor.vertexFunction = library?.makeFunction(name: "bezier_vertex")
             pipelineDescriptor.fragmentFunction = library?.makeFunction(name: "bezier_fragment")
             pipelineDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
@@ -225,7 +225,7 @@ class MetalBezierView: MTKView {
             params[index].animate()
         }
 
-        let commandBuffer = commandQueue!.makeCommandBuffer()
+        let commandBuffer = commandQueue!.makeCommandBuffer()!
 
         let renderPassDescriptor = self.currentRenderPassDescriptor
         
@@ -234,12 +234,12 @@ class MetalBezierView: MTKView {
         }
         
 
-        let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor!)
+        let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor!)!
 
         renderEncoder.setRenderPipelineState(pipelineState)
 
-        renderEncoder.setVertexBuffer(paramBuffer, offset: 0, at: 0)
-        renderEncoder.setVertexBuffer(globalParamBuffer, offset: 0, at: 1)
+		renderEncoder.setVertexBuffer(paramBuffer, offset: 0, index: 0)
+		renderEncoder.setVertexBuffer(globalParamBuffer, offset: 0, index: 1)
 
         // Enable this to see the actual triangles instead of a solid curve:
         //renderEncoder.setTriangleFillMode(.lines)
