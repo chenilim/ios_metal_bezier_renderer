@@ -17,23 +17,6 @@
 		5130CC981DD10BC000FA29CC /* PageAlignedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5130CC971DD10BC000FA29CC /* PageAlignedArray.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5130CC771DCEEC5200FA29CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5130CC5A1DCEEC5200FA29CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5130CC611DCEEC5200FA29CC;
-			remoteInfo = metal_bezier;
-		};
-		5130CC821DCEEC5200FA29CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5130CC5A1DCEEC5200FA29CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5130CC611DCEEC5200FA29CC;
-			remoteInfo = metal_bezier;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		5130CC621DCEEC5200FA29CC /* ios_metal_bezier_renderer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_metal_bezier_renderer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5130CC651DCEEC5200FA29CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +25,6 @@
 		5130CC6C1DCEEC5200FA29CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5130CC6F1DCEEC5200FA29CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5130CC711DCEEC5200FA29CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5130CC761DCEEC5200FA29CC /* ios_metal_bezier_rendererTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_metal_bezier_rendererTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5130CC811DCEEC5200FA29CC /* ios_metal_bezier_rendererUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_metal_bezier_rendererUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5130CC931DCEEC8400FA29CC /* MetalBezierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalBezierView.swift; sourceTree = "<group>"; };
 		5130CC951DCEED4F00FA29CC /* bezier_shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = bezier_shaders.metal; sourceTree = "<group>"; };
 		5130CC971DD10BC000FA29CC /* PageAlignedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageAlignedArray.swift; sourceTree = "<group>"; };
@@ -51,20 +32,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		5130CC5F1DCEEC5200FA29CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5130CC731DCEEC5200FA29CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5130CC7E1DCEEC5200FA29CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				5130CC621DCEEC5200FA29CC /* ios_metal_bezier_renderer.app */,
-				5130CC761DCEEC5200FA29CC /* ios_metal_bezier_rendererTests.xctest */,
-				5130CC811DCEEC5200FA29CC /* ios_metal_bezier_rendererUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,42 +94,6 @@
 			productReference = 5130CC621DCEEC5200FA29CC /* ios_metal_bezier_renderer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5130CC751DCEEC5200FA29CC /* ios_metal_bezier_rendererTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5130CC8D1DCEEC5300FA29CC /* Build configuration list for PBXNativeTarget "ios_metal_bezier_rendererTests" */;
-			buildPhases = (
-				5130CC721DCEEC5200FA29CC /* Sources */,
-				5130CC731DCEEC5200FA29CC /* Frameworks */,
-				5130CC741DCEEC5200FA29CC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5130CC781DCEEC5200FA29CC /* PBXTargetDependency */,
-			);
-			name = ios_metal_bezier_rendererTests;
-			productName = metal_bezierTests;
-			productReference = 5130CC761DCEEC5200FA29CC /* ios_metal_bezier_rendererTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5130CC801DCEEC5200FA29CC /* ios_metal_bezier_rendererUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5130CC901DCEEC5300FA29CC /* Build configuration list for PBXNativeTarget "ios_metal_bezier_rendererUITests" */;
-			buildPhases = (
-				5130CC7D1DCEEC5200FA29CC /* Sources */,
-				5130CC7E1DCEEC5200FA29CC /* Frameworks */,
-				5130CC7F1DCEEC5200FA29CC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5130CC831DCEEC5200FA29CC /* PBXTargetDependency */,
-			);
-			name = ios_metal_bezier_rendererUITests;
-			productName = metal_bezierUITests;
-			productReference = 5130CC811DCEEC5200FA29CC /* ios_metal_bezier_rendererUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,17 +107,8 @@
 					5130CC611DCEEC5200FA29CC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = R78Y2UBG4D;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
-					};
-					5130CC751DCEEC5200FA29CC = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 5130CC611DCEEC5200FA29CC;
-					};
-					5130CC801DCEEC5200FA29CC = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 5130CC611DCEEC5200FA29CC;
 					};
 				};
 			};
@@ -206,8 +126,6 @@
 			projectRoot = "";
 			targets = (
 				5130CC611DCEEC5200FA29CC /* ios_metal_bezier_renderer */,
-				5130CC751DCEEC5200FA29CC /* ios_metal_bezier_rendererTests */,
-				5130CC801DCEEC5200FA29CC /* ios_metal_bezier_rendererUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,20 +138,6 @@
 				5130CC701DCEEC5200FA29CC /* LaunchScreen.storyboard in Resources */,
 				5130CC6D1DCEEC5200FA29CC /* Assets.xcassets in Resources */,
 				5130CC6B1DCEEC5200FA29CC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5130CC741DCEEC5200FA29CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5130CC7F1DCEEC5200FA29CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,34 +156,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5130CC721DCEEC5200FA29CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5130CC7D1DCEEC5200FA29CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5130CC781DCEEC5200FA29CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5130CC611DCEEC5200FA29CC /* ios_metal_bezier_renderer */;
-			targetProxy = 5130CC771DCEEC5200FA29CC /* PBXContainerItemProxy */;
-		};
-		5130CC831DCEEC5200FA29CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5130CC611DCEEC5200FA29CC /* ios_metal_bezier_renderer */;
-			targetProxy = 5130CC821DCEEC5200FA29CC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5130CC691DCEEC5200FA29CC /* Main.storyboard */ = {
@@ -424,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chenilim.metal-bezier";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -438,61 +315,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chenilim.metal-bezier";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		5130CC8E1DCEEC5300FA29CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = metal_bezierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eldade.mac-metal-tests.metal-bezierTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios_metal_bezier_renderer.app/ios_metal_bezier_renderer";
-			};
-			name = Debug;
-		};
-		5130CC8F1DCEEC5300FA29CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = metal_bezierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eldade.mac-metal-tests.metal-bezierTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios_metal_bezier_renderer.app/ios_metal_bezier_renderer";
-			};
-			name = Release;
-		};
-		5130CC911DCEEC5300FA29CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = metal_bezierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eldade.mac-metal-tests.metal-bezierUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = metal_bezier;
-			};
-			name = Debug;
-		};
-		5130CC921DCEEC5300FA29CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = metal_bezierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eldade.mac-metal-tests.metal-bezierUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = metal_bezier;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -513,24 +336,6 @@
 			buildConfigurations = (
 				5130CC8B1DCEEC5300FA29CC /* Debug */,
 				5130CC8C1DCEEC5300FA29CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5130CC8D1DCEEC5300FA29CC /* Build configuration list for PBXNativeTarget "ios_metal_bezier_rendererTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5130CC8E1DCEEC5300FA29CC /* Debug */,
-				5130CC8F1DCEEC5300FA29CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5130CC901DCEEC5300FA29CC /* Build configuration list for PBXNativeTarget "ios_metal_bezier_rendererUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5130CC911DCEEC5300FA29CC /* Debug */,
-				5130CC921DCEEC5300FA29CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
